@@ -3,8 +3,7 @@
   "description": "General-purpose AI patterns for conversation, ideation, rating, and creative thinking.",
   "version": "1.0.0",
   "author": {
-    "name": "Brian Morin",
-    "attribution": "Patterns from danielmiessler/fabric (MIT License)"
+    "name": "Brian Morin"
   },
   "homepage": "https://github.com/bdmorin/the-no-shop",
   "repository": "https://github.com/bdmorin/the-no-shop",
@@ -15,12 +14,5 @@
     "conversation",
     "rating",
     "ideation"
-  ],
-  "category": "ai-patterns",
-  "tags": [
-    "fabric",
-    "patterns",
-    "skills"
-  ],
-  "skillCount": 44
+  ]
 }

@@ -1,0 +1,26 @@
+{
+  "name": "fabric-specialized",
+  "description": "Specialized patterns for evaluation, explanation, identification, improvement, recommendation, and discovery.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Brian Morin",
+    "attribution": "Patterns from danielmiessler/fabric (MIT License)"
+  },
+  "homepage": "https://github.com/bdmorin/the-no-shop",
+  "repository": "https://github.com/bdmorin/the-no-shop",
+  "license": "MIT",
+  "keywords": [
+    "evaluation",
+    "explanation",
+    "identification",
+    "improvement",
+    "discovery"
+  ],
+  "category": "ai-patterns",
+  "tags": [
+    "fabric",
+    "patterns",
+    "skills"
+  ],
+  "skillCount": 31
+}

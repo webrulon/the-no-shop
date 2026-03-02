@@ -1,0 +1,26 @@
+{
+  "name": "fabric-creation",
+  "description": "Create visualizations, documents, academic papers, mnemonics, and structured content.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Brian Morin",
+    "attribution": "Patterns from danielmiessler/fabric (MIT License)"
+  },
+  "homepage": "https://github.com/bdmorin/the-no-shop",
+  "repository": "https://github.com/bdmorin/the-no-shop",
+  "license": "MIT",
+  "keywords": [
+    "creation",
+    "visualization",
+    "mermaid",
+    "documents",
+    "academic"
+  ],
+  "category": "ai-patterns",
+  "tags": [
+    "fabric",
+    "patterns",
+    "skills"
+  ],
+  "skillCount": 60
+}

@@ -21,9 +21,220 @@
       "homepage": "https://github.com/bdmorin/the-no-shop",
       "repository": "https://github.com/bdmorin/the-no-shop",
       "license": "MIT",
-      "keywords": ["viewer", "browser", "annotations", "sidecar", "dashboard", "ixian"],
+      "keywords": [
+        "viewer",
+        "browser",
+        "annotations",
+        "sidecar",
+        "dashboard",
+        "ixian"
+      ],
       "category": "productivity",
-      "tags": ["output-viewer", "annotation", "multi-session", "dashboard"]
+      "tags": [
+        "output-viewer",
+        "annotation",
+        "multi-session",
+        "dashboard"
+      ]
+    },
+    {
+      "name": "fabric-analysis",
+      "source": "./plugins/fabric-analysis",
+      "description": "Analyze text, arguments, claims, threats, code, and complex inputs.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Brian Morin"
+      },
+      "homepage": "https://github.com/bdmorin/the-no-shop",
+      "repository": "https://github.com/bdmorin/the-no-shop",
+      "license": "MIT",
+      "keywords": [
+        "analysis",
+        "security",
+        "threats",
+        "code-review",
+        "arguments"
+      ],
+      "category": "ai-patterns",
+      "tags": [
+        "fabric",
+        "patterns",
+        "skills"
+      ]
+    },
+    {
+      "name": "fabric-creation",
+      "source": "./plugins/fabric-creation",
+      "description": "Create visualizations, documents, academic papers, mnemonics, and structured content.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Brian Morin"
+      },
+      "homepage": "https://github.com/bdmorin/the-no-shop",
+      "repository": "https://github.com/bdmorin/the-no-shop",
+      "license": "MIT",
+      "keywords": [
+        "creation",
+        "visualization",
+        "mermaid",
+        "documents",
+        "academic"
+      ],
+      "category": "ai-patterns",
+      "tags": [
+        "fabric",
+        "patterns",
+        "skills"
+      ]
+    },
+    {
+      "name": "fabric-extraction",
+      "source": "./plugins/fabric-extraction",
+      "description": "Extract insights, wisdom, sponsors, quotes, and structured data from text and transcripts.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Brian Morin"
+      },
+      "homepage": "https://github.com/bdmorin/the-no-shop",
+      "repository": "https://github.com/bdmorin/the-no-shop",
+      "license": "MIT",
+      "keywords": [
+        "extraction",
+        "insights",
+        "wisdom",
+        "quotes",
+        "transcripts",
+        "youtube"
+      ],
+      "category": "ai-patterns",
+      "tags": [
+        "fabric",
+        "patterns",
+        "skills"
+      ]
+    },
+    {
+      "name": "fabric-general",
+      "source": "./plugins/fabric-general",
+      "description": "General-purpose AI patterns for conversation, ideation, rating, and creative thinking.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Brian Morin"
+      },
+      "homepage": "https://github.com/bdmorin/the-no-shop",
+      "repository": "https://github.com/bdmorin/the-no-shop",
+      "license": "MIT",
+      "keywords": [
+        "general",
+        "ai",
+        "conversation",
+        "rating",
+        "ideation"
+      ],
+      "category": "ai-patterns",
+      "tags": [
+        "fabric",
+        "patterns",
+        "skills"
+      ]
+    },
+    {
+      "name": "fabric-specialized",
+      "source": "./plugins/fabric-specialized",
+      "description": "Specialized patterns for evaluation, explanation, identification, improvement, recommendation, and discovery.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Brian Morin"
+      },
+      "homepage": "https://github.com/bdmorin/the-no-shop",
+      "repository": "https://github.com/bdmorin/the-no-shop",
+      "license": "MIT",
+      "keywords": [
+        "evaluation",
+        "explanation",
+        "identification",
+        "improvement",
+        "discovery"
+      ],
+      "category": "ai-patterns",
+      "tags": [
+        "fabric",
+        "patterns",
+        "skills"
+      ]
+    },
+    {
+      "name": "fabric-summarization",
+      "source": "./plugins/fabric-summarization",
+      "description": "Summarize meetings, lectures, papers, git changes, and long-form content.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Brian Morin"
+      },
+      "homepage": "https://github.com/bdmorin/the-no-shop",
+      "repository": "https://github.com/bdmorin/the-no-shop",
+      "license": "MIT",
+      "keywords": [
+        "summarization",
+        "meetings",
+        "lectures",
+        "git",
+        "papers"
+      ],
+      "category": "ai-patterns",
+      "tags": [
+        "fabric",
+        "patterns",
+        "skills"
+      ]
+    },
+    {
+      "name": "fabric-thinking",
+      "source": "./plugins/fabric-thinking",
+      "description": "Structured thinking patterns for decision-making, problem-solving, and mental models.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Brian Morin"
+      },
+      "homepage": "https://github.com/bdmorin/the-no-shop",
+      "repository": "https://github.com/bdmorin/the-no-shop",
+      "license": "MIT",
+      "keywords": [
+        "thinking",
+        "decision-making",
+        "mental-models",
+        "problem-solving"
+      ],
+      "category": "ai-patterns",
+      "tags": [
+        "fabric",
+        "patterns",
+        "skills"
+      ]
+    },
+    {
+      "name": "fabric-writing",
+      "source": "./plugins/fabric-writing",
+      "description": "Write essays, pull requests, documentation, and polished prose.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Brian Morin"
+      },
+      "homepage": "https://github.com/bdmorin/the-no-shop",
+      "repository": "https://github.com/bdmorin/the-no-shop",
+      "license": "MIT",
+      "keywords": [
+        "writing",
+        "essays",
+        "pull-requests",
+        "documentation"
+      ],
+      "category": "ai-patterns",
+      "tags": [
+        "fabric",
+        "patterns",
+        "skills"
+      ]
     }
   ]
 }

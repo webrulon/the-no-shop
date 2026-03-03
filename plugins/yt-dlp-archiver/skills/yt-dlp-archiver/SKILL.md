@@ -212,7 +212,30 @@ other downloaded files.
 **Duration**: <duration>
 **Archived**: <today's date>
 **Skills chained**: summarize, extract-wisdom[, additional-skill-name]
+
+## Archive Manifest
+
+| File | Size | Description |
+|------|------|-------------|
+| `YYYYMMDD-<title>.mp4` | 172MB | 480p video (sponsors removed) |
+| `YYYYMMDD-<title>.transcript.txt` | 151K | Clean transcript (no timestamps) |
+| `YYYYMMDD-<title>.fabric.md` | 21K | Fabric analysis (this file) |
+| `YYYYMMDD-<title>.info.json` | 1.0M | Full metadata |
+| `YYYYMMDD-<title>.en.srt` | 249K | Timecoded subtitles |
+| `YYYYMMDD-<title>.jpg` | 68K | Thumbnail |
+| `YYYYMMDD-<title>.description` | 2.9K | Video description |
+| `YYYYMMDD-<title>.sponsorblock.json` | 841B | SponsorBlock segments |
+| `chapters/` | 9 files | Chapter frame captures |
 ```
+
+Populate the table from actual file sizes on disk (use `ls -lh` output).
+The Description column should reflect what was actually produced:
+- For `.mp4`: include resolution and whether sponsors were removed
+- For `.transcript.txt`: "Clean transcript (no timestamps)"
+- For `.fabric.md`: list the chained skills, e.g. "summarize + extract-wisdom + analyze-paper"
+- For `.sponsorblock.json`: include segment count and total removed duration if available
+- For `chapters/`: include file count
+- Omit rows for files that don't exist (e.g. no chapters/ if no chapters)
 
 Then write each skill's output in order, using the section headers that each
 skill's instructions specify.

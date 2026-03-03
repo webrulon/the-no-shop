@@ -23,8 +23,9 @@ Read the first match's parent directory to locate all reference files:
 - `element-templates.md` -- JSON templates for each Excalidraw element type
 - `json-schema.md` -- Element types, common properties, binding format
 - `render_excalidraw.py` -- Python/Playwright renderer (.excalidraw -> PNG)
+- `share_excalidraw.py` -- Upload to excalidraw.com, returns shareable URL (E2E encrypted)
 - `render_template.html` -- HTML template used by the renderer
-- `pyproject.toml` -- Python dependencies (playwright)
+- `pyproject.toml` -- Python dependencies (playwright, cryptography)
 
 **Read `color-palette.md` before generating any diagram.** It is the single source of truth for all color choices -- shape fills, strokes, text colors, evidence artifact backgrounds, everything.
 
@@ -532,6 +533,34 @@ The loop is done when:
 - Arrows route cleanly and connect to the right elements
 - Spacing is consistent and the composition is balanced
 - You'd be comfortable showing it to someone without caveats
+
+---
+
+## Share to excalidraw.com
+
+After the diagram passes validation, share it to excalidraw.com so the user can view and edit it interactively in the web app.
+
+### How to Share
+
+Locate the share script:
+
+```
+Glob: **/excalidraw-diagram/references/share_excalidraw.py
+```
+
+Then run:
+
+```bash
+cd <share script directory> && uv run python share_excalidraw.py <path-to-file.excalidraw>
+```
+
+This uploads the diagram (E2E encrypted -- the server never sees the raw data) and prints a shareable URL like:
+
+```
+https://excalidraw.com/#json=<id>,<key>
+```
+
+**Always share the URL with the user** after the render-validate loop is complete. The URL opens the diagram in excalidraw.com's full editor where they can modify, export, or re-share it.
 
 ---
 

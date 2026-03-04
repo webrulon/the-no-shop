@@ -1,12 +1,29 @@
 ---
 name: brave-search
-description: >-
-  Search the web, news, images, and videos using the Brave Search REST API.
-  Use when: searching for current information, news, images, or videos; running
-  web queries; fetching search suggestions or spellcheck; using AI-powered
-  summarization on search results; finding local businesses or POIs; building
-  search-augmented workflows. Requires BRAVE_SEARCH_API_KEY env var or the key
-  provided in context. All endpoints return JSON.
+description: "Brave Search REST API covering web, news, images, videos, suggest, spellcheck, local POIs, rich results, AI summarizer, LLM context (RAG-optimized grounding with token budget controls), and Answers (OpenAI-compatible chat completions with streaming and citations). Triggers on any request for live web data, current events, recent news, image search, video search, or building search-augmented agent workflows. Requires BRAVE_SEARCH_API_KEY."
+user-invokable: true
+argument-hint: "brave-search latest Iran news, brave-search --images mars surface, brave-search --answers what caused the 2025 spain outage, brave-search --local coffee shops chicago"
+license: MIT
+metadata:
+  version: "1.0.0"
+  author: "Brian Morin"
+  homepage: "https://github.com/bdmorin/the-no-shop"
+  category: search
+  requires:
+    env:
+      - BRAVE_SEARCH_API_KEY
+  endpoints:
+    - web-search
+    - llm-context
+    - answers
+    - images
+    - videos
+    - news
+    - suggest
+    - spellcheck
+    - local-pois
+    - rich-results
+    - summarizer
 ---
 
 # Brave Search API

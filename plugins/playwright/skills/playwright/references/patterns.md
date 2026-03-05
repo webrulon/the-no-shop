@@ -258,7 +258,53 @@ main().catch((e) => { console.error("FATAL:", e); process.exit(1); });
 
 ---
 
-## Pattern 8: Manifest Append Snippet
+## Pattern 8: Raw Article / Content Extraction
+
+Extract the full text of a page and all outgoing links — no AI middleman, no schema needed. This is the correct approach for "get the article" or "extract page content" requests.
+
+```typescript
+import { chromium } from "playwright";
+
+async function main() {
+  const browser = await chromium.launch({ headless: true });
+  const page = await browser.newPage();
+
+  await page.goto("https://TARGET_URL", { waitUntil: "domcontentloaded" });
+  await new Promise((r) => setTimeout(r, 3000)); // let JS render
+
+  // Raw text — tries article > main > .post-content > body
+  const content = await page.evaluate(() => {
+    const el = document.querySelector("article")
+      || document.querySelector("main")
+      || document.querySelector(".post-content")
+      || document.body;
+    return el?.innerText || "";
+  });
+
+  // All outgoing links with anchor text
+  const links = await page.evaluate(() => {
+    return Array.from(document.querySelectorAll("a[href]"))
+      .map((a) => ({
+        text: (a as HTMLAnchorElement).innerText.trim(),
+        url: (a as HTMLAnchorElement).href,
+      }))
+      .filter((l) => l.text && l.url.startsWith("http"));
+  });
+
+  console.log(JSON.stringify({ content, links }, null, 2));
+  await browser.close();
+}
+
+main().catch((e) => { console.error("FATAL:", e); process.exit(1); });
+```
+
+**When to use**: Any request to "get the article," "extract the page," or "scrape the content." This returns the actual text, not an AI summary. Use `domcontentloaded` + delay instead of `networkidle` for ad-heavy sites.
+
+**When NOT to use**: If you need structured data from a messy page (e.g., "extract all product prices into columns"), use Stagehand Pattern 1 instead.
+
+---
+
+## Pattern 9: Manifest Append Snippet
 
 Log script execution metadata to a manifest for auditing and debugging.
 

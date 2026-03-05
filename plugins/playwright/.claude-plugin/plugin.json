@@ -1,0 +1,23 @@
+{
+  "name": "playwright",
+  "description": "Stagehand + Playwright browser automation. Script generation for scraping, screenshots, HAR recording, tracing, CDP profiling, and AI-powered extraction. No MCP needed.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Brian Morin"
+  },
+  "homepage": "https://github.com/bdmorin/the-no-shop",
+  "repository": "https://github.com/bdmorin/the-no-shop",
+  "license": "MIT",
+  "keywords": [
+    "playwright",
+    "stagehand",
+    "browser",
+    "automation",
+    "scraping",
+    "screenshot",
+    "har",
+    "tracing",
+    "cdp",
+    "profiling"
+  ]
+}
